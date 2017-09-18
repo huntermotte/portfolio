@@ -8,20 +8,20 @@
   <body>
 
     <header>
-      <nav>
-        <a>About Me |</a>
-        <a>Portfolio |</a>
-        <a>Resume |</a>
-        <a>Contact Info</a>
+      <nav class="navbar">
+        <a href="#about">About Me |</a>
+        <a href="#portfolio">Portfolio |</a>
+        <a href="#contact">Contact Info</a>
       </nav>
     </header>
 
     <section>
-      <div class="intro">
+      <div id="intro-container">
 
-        <h1 class="hello">Hi, I'm Hunter</h1>
+        <h1 class="hello">Hunter Motte</h1>
 
-        <h2>Fullstack JavaScript developer</h2>
+        <h2 class="blurb">Fullstack JavaScript developer</h2>
+        <h2 class="blurb2">Mongo⚡Express⚡React⚡Node</h2>
 
         <div id="space">
           <div class="stars"></div>
@@ -35,10 +35,61 @@
     </section>
 
     <section>
-      <div>
-        <h1>Portfolio<h1>
+      <div id="about-container">
+        <a id="about" class="smooth"></a>
+          <h1 class="about-header">Who is Hunter Motte?</h1>
+
+          <div class="about-me">
+            <p>My name is Hunter and I'm a web developer living in Raleigh, NC. I've always had an interest in coding for the sake of being able to create anything I wanted, so I dove into the learning process to start off 2017. Since then I've learned a ton about web development, going through the full stack using JavaScript and related backend languages and frameworks. I learned with the help of Thinkful's flexible web development program, and I'm consistently blown away with how much I learned in so little time. Mentorship throughout the program has allowed me to grow as a developer much faster than I otherwise would have on my own, and fortunately I've learned enough to get some apps up and running. Check out my portfolio of personal projects below!</p>
+            <p>When I'm not developing you can find me getting angry at my favorite sports teams. I'm originally from Monroe, NC and cheer on the Carolina Panthers, Charlotte Hornets, and my alma mater the UNC Tar Heels. I love getting getting out and seeing good live music and traveling as much as possible. I come to the world of programming from the finance industry and am still involved in making quality financial advice available to those who need it most.</p>
+          </div>
+
       </div>
     </section>
 
+    <section>
+      <div id="portfolio-container">
+        <a id="portfolio" class="smooth"></a>
+        <h1 class="portfolio-main">Portfolio</h1>
+
+        <h2 class="portfolio-header">Fridge Cleaner</h2>
+          <a href="https://github.com/huntermotte/Fridge-Cleaner" target="_blank"><button class="portfolio-button">Source Code</button></a>
+          <a href="https://huntermotte.github.io/Fridge-Cleaner" target="_blank"><button>Live Demo</button></a>
+          <p class="portfolio-description">Fridge Cleaner is an app that allows users to search any ingredients and find recipes that use them. I found myself constantly stuck with random ingredients in my fridge or pantry without a clear plan of what to do with them before they expired. Fridge Cleaner helps alleviate that concern, utilizing Edamam's API to retrieve the comma-delineated ingredients and find matching recipes!</p>
+
+        <h2 class="portfolio-header">Open Source Trading</h2>
+          <a href="https://github.com/huntermotte/open-source-trading" target="_blank"><button class="portfolio-button">Source Code</button></a>
+          <a href="https://gentle-peak-73337.herokuapp.com/" target="_blank"><button>Live Demo</button></a>
+          <p class="portfolio-description">Open Source Trading a project that allows users to create securities trading ideas and interact with other traders to open source knowledge. You can create and delete your own ideas and explore what others have to say. I love researching and trading stocks, so I created Open Source Trading to be able to gather my random thoughts in a journal of sorts. Of course, the more investors that join, the more open source trading information is available!</p>
+
+        <h2 class="portfolio-header">Hangout Roulette</h2>
+          <a href="https://github.com/huntermotte/hangout-roulette" target="_blank"><button class="portfolio-button">Source Code</button></a>
+          <a href="https://hangoutroulette.herokuapp.com" target="_blank"><button>Live Demo</button></a>
+          <p class="portfolio-description">Hangout Roulette is a way to simplify the age old of question of "Where should we go to eat?" Initially built around my current location in downtown Raleigh, the app utilizes FourSquare's API to pull a random venue's data and present that as an eating spot. Users can save their favorite venues and add notes, so the next time a venue shows up they can see what they thought about it last time. With so much good food in Raleigh it seemed like a no-brainer, especially for someone who loves to try new spots.</p>
+
+      </div>
+    </section>
+
+    <section>
+      <div id="contact-container">
+        <a id="contact" class="smooth"></a>
+          <h1>Email: huntermotte@gmail.com</h1>
+          <h1>Github: huntermotte</h1>
+      </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+    <script>
+    $('.smooth').on('click', function() {
+        $.smoothScroll({
+            scrollElement: $('body'),
+            scrollTarget: '#' + this.id
+        });
+
+        return false;
+    });
+    </script>
   </body>
 </html>
