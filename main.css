@@ -48,6 +48,17 @@ nav {
   text-align: center;
 }
 
+.down-arrow {
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 90%;
+  font-size: 3em;
+  text-align: center;
+  z-index: 1;
+}
+
 #intro-container, #about-container, #portfolio-container {
   height: 1000px;
 }
