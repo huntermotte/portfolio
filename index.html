@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="space-rocket-16-191583.png">
+    <script src="https://use.fontawesome.com/55b31543a7.js"></script>
     <title>Hunter Motte</title>
     <link rel="stylesheet" href="main.css">
   </head>
@@ -9,9 +11,9 @@
 
     <header>
       <nav class="navbar">
-        <a href="#about">About Me |</a>
-        <a href="#portfolio">Portfolio |</a>
-        <a href="#contact">Contact Info</a>
+        <a href="#about" class="nav-link">About Me |</a>
+        <a href="#portfolio" class="nav-link">Portfolio |</a>
+        <a href="#contact" class="nav-link">Contact Info</a>
       </nav>
     </header>
 
@@ -73,14 +75,19 @@
     <section>
       <div id="contact-container">
         <a id="contact" class="smooth"></a>
+          <h1 class="contact-greeting">Feel free to reach out, I'm happy to answer any questions!</h1>
           <h1>Email: huntermotte@gmail.com</h1>
           <h1>Github: huntermotte</h1>
+          <a href="https://www.linkedin.com/in/huntermotte" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+          <a href="https://github.com/huntermotte" target="_blank"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/hunter.motte.9" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/huntermotte" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
       </div>
     </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
     <script>
     $('.smooth').on('click', function() {
         $.smoothScroll({
@@ -90,6 +97,7 @@
 
         return false;
     });
+
     </script>
   </body>
 </html>
