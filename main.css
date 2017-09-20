@@ -102,7 +102,7 @@ nav {
 }
 
 .about-header {
-  font-size: 45px;
+  font-size: 55px;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -257,3 +257,48 @@ img {
 body {
   background: #000;
 }
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px) {
+    #intro-container {
+      text-align: center;
+    }
+
+    nav {
+      position: relative;
+      text-align: center;
+    }
+
+    .hello {
+      top: 25%;
+      font-size: 45px;
+    }
+
+    .blurb {
+      font-size: 30px;
+      top: 38%;
+    }
+
+    .blurb2 {
+      font-size: 30px;
+      top: 50%;
+    }
+
+    .about-me {
+      font-size: 25px;
+    }
+
+    .down-arrow2 {
+      top: 200%;
+    }
+
+    .portfolio-main {
+      margin-top: 10%;
+    }
+
+    .up-arrow {
+      top: 207%;
+    }
+
+  }
