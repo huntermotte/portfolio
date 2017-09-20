@@ -25,7 +25,7 @@
 
         <h2 class="blurb">Fullstack JavaScript developer</h2>
         <h2 class="blurb2">Mongo⚡Express⚡React⚡Node</h2>
-        <a href="#about" id="about" class="down-arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        <a href="#about" id="down1" class="down-arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 
         <div id="space">
           <div class="stars"></div>
@@ -43,10 +43,14 @@
         <a id="about" class="smooth"></a>
           <h1 class="about-header">👋</h1>
 
+
+
           <div class="about-me">
             <p>My name is Hunter and I'm a web developer living in Raleigh, NC. I've always had an interest in coding for the sake of being able to create anything I wanted, so I dove into the learning process to start off 2017. Since then I've learned a ton about web development, going through the full stack using JavaScript and related backend languages and frameworks. I learned with the help of Thinkful's flexible web development program, and I'm consistently blown away with how much I learned in so little time. Mentorship throughout the program has allowed me to grow as a developer much faster than I otherwise would have on my own, and fortunately I've learned enough to get some apps up and running. Check out my portfolio of personal projects below!</p>
             <p>When I'm not developing you can find me getting angry at my favorite sports teams. I'm originally from Monroe, NC and cheer on the Carolina Panthers, Charlotte Hornets, and my alma mater the UNC Tar Heels. I love getting getting out and seeing good live music and traveling as much as possible. I come to the world of programming from the finance industry and am still involved in making quality financial advice available to those who need it most.</p>
           </div>
+
+          <a href="#portfolio" id="down2" class="down-arrow2"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 
       </div>
     </section>
@@ -54,6 +58,7 @@
     <section>
       <div id="portfolio-container">
         <a id="portfolio" class="smooth"></a>
+        <a href="#about" id="up1" class="up-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
         <h1 class="portfolio-main">Portfolio</h1>
 
         <h2 class="portfolio-header">Fridge Cleaner</h2>
@@ -111,6 +116,18 @@
 
     $( "#contact" ).on('click', function() {
       $("html, body").animate({ scrollTop: $('#contact-container').offset().top }, 1000);
+    });
+
+    $( "#down1" ).on('click', function() {
+      $("html, body").animate({ scrollTop: $('#about-container').offset().top }, 1000);
+    });
+
+    $( "#down2" ).on('click', function() {
+      $("html, body").animate({ scrollTop: $('#portfolio-container').offset().top }, 1000);
+    });
+
+    $( "#up1" ).on('click', function() {
+      $("html, body").animate({ scrollTop: $('#about-container').offset().top }, 1000);
     });
 
     </script>

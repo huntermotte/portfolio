@@ -60,6 +60,28 @@ nav {
   z-index: 1;
 }
 
+.down-arrow2 {
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 3em;
+  text-align: center;
+  z-index: 1;
+  top: 194%;
+}
+
+.up-arrow {
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 3em;
+  text-align: center;
+  z-index: 1;
+  top: 208%;
+}
+
 #intro-container, #about-container {
   height: 100vh;
 }
@@ -76,7 +98,7 @@ nav {
   background: linear-gradient(to bottom right, #1abc9c, #8e44ad); /* Standard syntax */
   text-align: center;
   padding-top: 1%;
-  padding-bottom: 3%;
+  padding-bottom: 3%
 }
 
 .about-header {
@@ -102,6 +124,7 @@ nav {
   text-align: center;
   color: white;
   font-size: 45px;
+  margin-top: 5%;
 }
 
 .portfolio-header {
@@ -135,6 +158,7 @@ button {
   font-weight: bold;
   border-radius: 25px;
   padding: 10px;
+  cursor: pointer;
 }
 
 img {
