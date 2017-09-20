@@ -6,14 +6,15 @@
     <script src="https://use.fontawesome.com/55b31543a7.js"></script>
     <title>Hunter Motte</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   </head>
   <body>
 
     <header>
       <nav class="navbar">
-        <a href="#about" class="nav-link">About Me |</a>
-        <a href="#portfolio" class="nav-link">Portfolio |</a>
-        <a href="#contact" class="nav-link">Contact Info</a>
+        <a href="#about" id="about" class="nav-link">About Me |</a>
+        <a href="#portfolio" id="portfolio" class="nav-link">Portfolio |</a>
+        <a href="#contact" id="contact" class="nav-link">Contact Info</a>
       </nav>
     </header>
 
@@ -24,7 +25,7 @@
 
         <h2 class="blurb">Fullstack JavaScript developer</h2>
         <h2 class="blurb2">Mongo⚡Express⚡React⚡Node</h2>
-        <a href="#about" class="down-arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        <a href="#about" id="about" class="down-arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 
         <div id="space">
           <div class="stars"></div>
@@ -40,7 +41,7 @@
     <section>
       <div id="about-container">
         <a id="about" class="smooth"></a>
-          <h1 class="about-header">Who is Hunter Motte?</h1>
+          <h1 class="about-header">👋</h1>
 
           <div class="about-me">
             <p>My name is Hunter and I'm a web developer living in Raleigh, NC. I've always had an interest in coding for the sake of being able to create anything I wanted, so I dove into the learning process to start off 2017. Since then I've learned a ton about web development, going through the full stack using JavaScript and related backend languages and frameworks. I learned with the help of Thinkful's flexible web development program, and I'm consistently blown away with how much I learned in so little time. Mentorship throughout the program has allowed me to grow as a developer much faster than I otherwise would have on my own, and fortunately I've learned enough to get some apps up and running. Check out my portfolio of personal projects below!</p>
@@ -56,18 +57,24 @@
         <h1 class="portfolio-main">Portfolio</h1>
 
         <h2 class="portfolio-header">Fridge Cleaner</h2>
-          <a href="https://github.com/huntermotte/Fridge-Cleaner" target="_blank"><button class="portfolio-button">Source Code</button></a>
+        <div class="portfolio-buttons">
+          <a href="https://github.com/huntermotte/Fridge-Cleaner" target="_blank"><button>Source Code</button></a>
           <a href="https://huntermotte.github.io/Fridge-Cleaner" target="_blank"><button>Live Demo</button></a>
+        </div>
           <p class="portfolio-description">Fridge Cleaner is an app that allows users to search any ingredients and find recipes that use them. I found myself constantly stuck with random ingredients in my fridge or pantry without a clear plan of what to do with them before they expired. Fridge Cleaner helps alleviate that concern, utilizing Edamam's API to retrieve the comma-delineated ingredients and find matching recipes!</p>
 
         <h2 class="portfolio-header">Open Source Trading</h2>
-          <a href="https://github.com/huntermotte/open-source-trading" target="_blank"><button class="portfolio-button">Source Code</button></a>
+        <div class="portfolio-buttons">
+          <a href="https://github.com/huntermotte/open-source-trading" target="_blank"><button>Source Code</button></a>
           <a href="https://gentle-peak-73337.herokuapp.com/" target="_blank"><button>Live Demo</button></a>
+        </div>
           <p class="portfolio-description">Open Source Trading a project that allows users to create securities trading ideas and interact with other traders to open source knowledge. You can create and delete your own ideas and explore what others have to say. I love researching and trading stocks, so I created Open Source Trading to be able to gather my random thoughts in a journal of sorts. Of course, the more investors that join, the more open source trading information is available!</p>
 
         <h2 class="portfolio-header">Hangout Roulette</h2>
-          <a href="https://github.com/huntermotte/hangout-roulette" target="_blank"><button class="portfolio-button">Source Code</button></a>
+        <div class="portfolio-buttons">
+          <a href="https://github.com/huntermotte/hangout-roulette" target="_blank"><button>Source Code</button></a>
           <a href="https://hangoutroulette.herokuapp.com" target="_blank"><button>Live Demo</button></a>
+        </div>
           <p class="portfolio-description">Hangout Roulette is a way to simplify the age old of question of "Where should we go to eat?" Initially built around my current location in downtown Raleigh, the app utilizes FourSquare's API to pull a random venue's data and present that as an eating spot. Users can save their favorite venues and add notes, so the next time a venue shows up they can see what they thought about it last time. With so much good food in Raleigh it seemed like a no-brainer, especially for someone who loves to try new spots.</p>
 
       </div>
@@ -77,8 +84,8 @@
       <div id="contact-container">
         <a id="contact" class="smooth"></a>
           <h1 class="contact-greeting">Feel free to reach out, I'm happy to answer any questions!</h1>
-          <h1>Email: huntermotte@gmail.com</h1>
-          <h1>Github: huntermotte</h1>
+          <h1>Email: <a href="mailto:huntermotte@gmail.com" target="_blank">huntermotte@gmail.com</a></h1>
+          <h1>Github: <a href="https://github.com/huntermotte" target="_blank">huntermotte</a></h1>
           <a href="https://www.linkedin.com/in/huntermotte" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
           <a href="https://github.com/huntermotte" target="_blank"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
           <a href="https://www.facebook.com/hunter.motte.9" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
@@ -90,13 +97,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
     <script>
-    $('.smooth').on('click', function() {
-        $.smoothScroll({
-            scrollElement: $('body'),
-            scrollTarget: '#' + this.id
-        });
 
-        return false;
+    $( "#about" ).on('click', function() {
+      $("html, body").animate({ scrollTop: $('#about-container').offset().top }, 1000);
+    });
+
+    $( "#portfolio" ).on('click', function() {
+      $("html, body").animate({ scrollTop: $('#portfolio-container').offset().top }, 1000);
+    });
+
+    $( "#contact" ).on('click', function() {
+      $("html, body").animate({ scrollTop: $('#contact-container').offset().top }, 1000);
     });
 
     </script>

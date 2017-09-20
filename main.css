@@ -13,7 +13,8 @@ nav {
   right: 0;
   color: white;
   text-align: right;
-  font-size: 30px;
+  font-size: 35px;
+  font-family: 'Roboto Slab', serif;
   z-index: 1;
   padding-right: 10px;
 }
@@ -21,7 +22,7 @@ nav {
 .hello {
   position: absolute;
   z-index: 1;
-  top: 25%;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, 0);
   color: white;
@@ -60,28 +61,35 @@ nav {
 }
 
 #intro-container, #about-container, #portfolio-container {
-  height: 1000px;
+  height: 100vh;
 }
 
 #intro-container {
-
+  font-family: 'Roboto Slab', serif;
 }
 
 #about-container {
-  background-color: white;
+  background: #1abc9c; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #1abc9c, #8e44ad); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #1abc9c, #8e44ad); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #1abc9c, #8e44ad); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #1abc9c, #8e44ad); /* Standard syntax */
   text-align: center;
-  padding-top: 4%;
+  padding-top: 1%;
+  padding-bottom: 3%;
 }
 
 .about-header {
   font-size: 45px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .about-me {
-  font-size: 35px;
+  font-size: 30px;
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
+  font-family: 'Roboto Slab', serif;
 }
 
 #portfolio-container {
@@ -96,6 +104,7 @@ nav {
 .portfolio-header {
   padding-right: 5%;
   padding-left: 5%;
+  text-align: center;
 }
 
 .portfolio-description {
@@ -104,8 +113,8 @@ nav {
   padding-right: 5%;
 }
 
-.portfolio-button {
-  margin-left: 5%;
+.portfolio-buttons {
+  text-align: center;
 }
 
 #contact-container {
@@ -121,6 +130,7 @@ nav {
 /*Animation*/
 
 @import url(https://fonts.googleapis.com/css?family=Orbitron:700);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
 /* Stars
 ------------------------------------- */
