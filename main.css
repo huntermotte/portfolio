@@ -184,6 +184,10 @@ img {
   font-family: 'Roboto Slab', serif;
 }
 
+.fa, .contact-email, .contact-github {
+  color: white;
+}
+
 /*Animation*/
 
 @import url(https://fonts.googleapis.com/css?family=Orbitron:700);
