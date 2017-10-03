@@ -184,8 +184,13 @@ img {
   font-family: 'Roboto Slab', serif;
 }
 
-.fa, .contact-email, .contact-github {
+.contact-email, .contact-github {
   color: white;
+}
+
+.fa {
+  color: white;
+  padding: 10px;
 }
 
 /*Animation*/
