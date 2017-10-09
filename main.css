@@ -295,7 +295,7 @@ body {
     }
 
     .about-me {
-      font-size: 25px;
+      font-size: 28px;
     }
 
     .down-arrow2 {
@@ -311,3 +311,177 @@ body {
     }
 
   }
+
+  /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) and (max-width : 480px) {
+      #intro-container {
+        text-align: center;
+      }
+
+      nav {
+        position: relative;
+        text-align: center;
+      }
+
+      .hello {
+        top: 25%;
+        font-size: 45px;
+      }
+
+      .blurb {
+        font-size: 30px;
+        top: 38%;
+      }
+
+      .blurb2 {
+        font-size: 30px;
+        top: 50%;
+      }
+
+      .about-me {
+        font-size: 28px;
+      }
+
+      .down-arrow2 {
+        top: 200%;
+      }
+
+      .portfolio-main {
+        margin-top: 10%;
+      }
+
+      .up-arrow {
+        top: 207%;
+      }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) and (max-width : 768px) {
+      #intro-container {
+        text-align: center;
+      }
+
+      nav {
+        position: relative;
+        text-align: center;
+      }
+
+      .hello {
+        top: 25%;
+        font-size: 45px;
+      }
+
+      .blurb {
+        font-size: 30px;
+        top: 38%;
+      }
+
+      .blurb2 {
+        font-size: 30px;
+        top: 50%;
+      }
+
+      .about-me {
+        font-size: 25px;
+      }
+
+      .down-arrow2 {
+        top: 200%;
+      }
+
+      .portfolio-main {
+        margin-top: 10%;
+      }
+
+      .up-arrow {
+        top: 207%;
+      }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) and (max-width : 992px) {
+      #intro-container {
+        text-align: center;
+      }
+
+      nav {
+        position: relative;
+        text-align: center;
+      }
+
+      .hello {
+        top: 25%;
+        font-size: 45px;
+      }
+
+      .blurb {
+        font-size: 30px;
+        top: 38%;
+      }
+
+      .blurb2 {
+        font-size: 30px;
+        top: 50%;
+      }
+
+      .about-me {
+        font-size: 25px;
+      }
+
+      .down-arrow2 {
+        top: 200%;
+      }
+
+      .portfolio-main {
+        margin-top: 10%;
+      }
+
+      .up-arrow {
+        top: 207%;
+      }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) and (max-width : 1200px) {
+      #intro-container {
+        text-align: center;
+      }
+
+      .hello {
+        top: 25%;
+        font-size: 45px;
+      }
+
+      .blurb {
+        font-size: 30px;
+        top: 38%;
+      }
+
+      .blurb2 {
+        font-size: 30px;
+        top: 50%;
+      }
+
+      .about-me {
+        font-size: 25px;
+      }
+
+      .down-arrow2 {
+        top: 200%;
+      }
+
+      .portfolio-main {
+        margin-top: 10%;
+      }
+
+      .up-arrow {
+        top: 207%;
+      }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
