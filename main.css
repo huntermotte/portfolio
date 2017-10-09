@@ -298,8 +298,12 @@ body {
       font-size: 28px;
     }
 
+    .about-paragraph {
+      font-size: 28px;
+    }
+
     .down-arrow2 {
-      top: 200%;
+      top: 204%;
     }
 
     .portfolio-main {
@@ -307,7 +311,7 @@ body {
     }
 
     .up-arrow {
-      top: 207%;
+      top: 210%;
     }
 
   }
