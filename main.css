@@ -37,6 +37,7 @@ nav {
   top: 41%;
   font-size: 3em;
   text-align: center;
+  width: 100%;
 }
 
 .blurb2 {
@@ -209,6 +210,7 @@ img {
   left: 0;
   right: 0;
   z-index: 0;
+  display: block;
 }
 
 .stars {
