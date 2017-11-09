@@ -108,7 +108,7 @@ nav {
 }
 
 .about-me {
-  font-size: 30px;
+  font-size: 28px;
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
@@ -138,11 +138,19 @@ nav {
 }
 
 .portfolio-description {
-  font-size: 25px;
+  font-size: 22px;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: white;
+}
+
+.built-with {
+  font-size: 22px;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 2%;
   color: white;
+  font-weight: bold;
 }
 
 .portfolio-buttons {
@@ -163,9 +171,9 @@ button {
 }
 
 img {
-  max-width: 95%;
-  padding-left: 2%;
-  padding-right: 2%;
+  max-width: 65%;
+  display: block;
+  margin: 0 auto;
 }
 
 #contact-container {
