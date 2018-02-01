@@ -34,7 +34,7 @@ nav {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 41%;
+  top: 40%;
   font-size: 3em;
   text-align: center;
   width: 100%;
@@ -45,7 +45,7 @@ nav {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 48%;
+  top: 49%;
   font-size: 3em;
   text-align: center;
 }
