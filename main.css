@@ -26,7 +26,7 @@ nav {
   left: 50%;
   transform: translate(-50%, 0);
   color: white;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .blurb {
@@ -35,7 +35,7 @@ nav {
   left: 50%;
   transform: translate(-50%, 0);
   top: 40%;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   width: 100%;
 }
@@ -46,7 +46,17 @@ nav {
   left: 50%;
   transform: translate(-50%, 0);
   top: 49%;
-  font-size: 3em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.blurb3 {
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 58%;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -108,7 +118,7 @@ nav {
 }
 
 .about-me {
-  font-size: 28px;
+  font-size: 24px;
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
@@ -168,6 +178,22 @@ button {
   border-radius: 25px;
   padding: 10px;
   cursor: pointer;
+}
+
+#platformGrouping {
+  text-align: center;
+}
+
+#iosApp {
+  display: inline-block;
+  max-width: 33%;
+  text-align: center;
+}
+
+#androidApp {
+  display: inline-block;
+  max-width: 33%;
+  text-align: center;
 }
 
 img {
