@@ -1,3 +1,8 @@
+body {
+  line-height: 2.25rem;
+  font-family: 'Rubik', sans-serif;
+}
+
 .nav-link {
   color: white;
   text-decoration: none;
@@ -14,7 +19,6 @@ nav {
   color: white;
   text-align: right;
   font-size: 35px;
-  font-family: 'Roboto Slab', serif;
   z-index: 1;
   padding-right: 10px;
 }
@@ -98,7 +102,6 @@ nav {
 }
 
 #intro-container {
-  font-family: 'Roboto Slab', serif;
 }
 
 #about-container {
@@ -114,7 +117,6 @@ nav {
 
 .about-header {
   font-size: 55px;
-  font-family: 'Roboto Slab', serif;
 }
 
 .about-me {
@@ -122,12 +124,10 @@ nav {
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
-  font-family: 'Roboto Slab', serif;
 }
 
 #portfolio-container {
   background-color: #000;
-  font-family: 'Roboto Slab', serif;
 }
 
 .portfolio-main {
@@ -172,7 +172,6 @@ button {
   color: #1abc9c;
   font-size: 30px;
   margin-top: 20px;
-  font-family: 'Roboto Slab', serif;
   border: 2px solid #1abc9c;
   font-weight: bold;
   border-radius: 25px;
@@ -210,13 +209,11 @@ img {
   background: linear-gradient(to bottom right, #1abc9c, #8e44ad); /* Standard syntax */
   text-align: center;
   height: 500px;
-  font-family: 'Roboto Slab', serif;
 }
 
 .contact-greeting {
   padding-top: 100px;
   font-size: 35px;
-  font-family: 'Roboto Slab', serif;
 }
 
 .contact-email, .contact-github {
