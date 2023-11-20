@@ -107,11 +107,11 @@ nav {
 }
 
 #about-container {
-  background: #1abc9c; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #1abc9c, #8e44ad); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #1abc9c, #8e44ad); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #1abc9c, #8e44ad); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #1abc9c, #8e44ad); /* Standard syntax */
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, gray); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, gray); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, gray); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, gray); /* Standard syntax */
   text-align: center;
   padding-top: 1%;
   padding-bottom: 3%
@@ -204,26 +204,26 @@ img {
 }
 
 #contact-container {
-  background: #1abc9c; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #1abc9c, #8e44ad); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #1abc9c, #8e44ad); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #1abc9c, #8e44ad); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #1abc9c, #8e44ad); /* Standard syntax */
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, white, gray); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, gray); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, white, gray); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, gray); /* Standard syntax */
   text-align: center;
-  height: 500px;
+  height: 400px;
+  padding-top: 50px;
 }
 
-.contact-greeting {
-  padding-top: 100px;
-  font-size: 35px;
+.contact-item {
+  margin-top: 2.5rem;
 }
 
 .contact-email, .contact-github {
-  color: white;
+  color: black;
 }
 
 .fa {
-  color: white;
+  color: black;
   padding: 10px;
 }
 
@@ -335,6 +335,7 @@ body {
 
     .about-paragraph {
       font-size: 35px;
+      padding-top: 10vh;
     }
 
     .down-arrow2 {
