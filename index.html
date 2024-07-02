@@ -163,6 +163,24 @@
       $("html, body").animate({ scrollTop: $('#about-container').offset().top }, 1000);
     });
 
+    $(document).ready(function() {
+      // Check if the URL has a hash
+      if (window.location.hash) {
+        // Get the hash value
+        var hash = window.location.hash.substring(1); // Remove the leading #
+
+        // Route to the section with the ID of the hash value
+        var target = $('#' + hash + '-container');
+
+        // If the target element exists, scroll to it
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000); // Adjust the duration as needed
+        }
+      }
+    });
+
     </script>
   </body>
 </html>
