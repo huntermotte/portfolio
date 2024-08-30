@@ -66,6 +66,11 @@ nav {
   width: 95%;
 }
 
+.about-paragraph {
+  padding-top: 8vh;
+  line-height: 2.5rem;
+}
+
 .down-arrow {
   color: white;
   position: absolute;
