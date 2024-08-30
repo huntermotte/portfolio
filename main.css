@@ -312,6 +312,7 @@ body {
     nav {
       position: relative;
       text-align: center;
+      font-size: 45px;
     }
 
     .hello {
@@ -334,8 +335,9 @@ body {
     }
 
     .about-paragraph {
-      font-size: 35px;
-      padding-top: 10vh;
+      font-size: 45px;
+      padding-top: 7vh;
+      line-height: 3.5rem;
     }
 
     .down-arrow2 {
@@ -453,17 +455,21 @@ body {
 
       .hello {
         top: 25%;
-        font-size: 45px;
+        font-size: 65px;
       }
 
       .blurb {
-        font-size: 30px;
+        font-size: 50px;
         top: 38%;
       }
 
       .blurb2 {
-        font-size: 30px;
+        font-size: 45px;
         top: 50%;
+      }
+
+      .blurb3 {
+        font-size: 45px;
       }
 
       .about-me {
